@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лето Бабочек - Wektra</title>
-  <!-- Font Awesome -->
+  <title>Лето Бабочек - by Wektra</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
@@ -57,6 +55,15 @@
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
+    @media (max-width: 640px) {
+      .gallery img {
+        width: 300px;
+        height: 300px;
+      }
+      .hero h1 {
+        font-size: 2.5em;
+      }
+    }
     .platforms-container {
       padding: 2em;
       margin-top: auto;
@@ -86,7 +93,7 @@
 </head>
 <body class="flex flex-col min-h-screen">
   <div class="hero">
-    <h1>Лето Бабочек</h1>
+    <h1>«Лето Бабочек»</h1>
     <h2>by Wektra</h2>
   </div>
 
