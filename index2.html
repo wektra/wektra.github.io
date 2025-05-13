@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Будни - Wektra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      min-height: 100vh;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('cover2.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px) brightness(0.7);
+      z-index: -1;
+    }
+    .hero {
+      text-align: center;
+      padding: 2em;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0.3em 0 0.2em;
+    }
+    .hero h2 {
+      font-weight: 300;
+      margin: 0;
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 60vh;
+      padding: 2em;
+    }
+    .gallery img {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 640px) {
+      .gallery {
+        min-height: 40vh;
+        padding: 1em;
+      }
+      .gallery img {
+        width: 300px;
+        height: 300px;
+      }
+      .hero h1 {
+        font-size: 2.5em;
+      }
+      .hero {
+        padding: 1em;
+      }
+      .platforms-container {
+        padding: 1em;
+      }
+      .contact {
+        padding: 1em;
+      }
+    }
+    .platforms-container {
+      padding: 2em;
+      margin-top: auto;
+    }
+    .platform-btn {
+      transition: all 0.3s ease;
+      transform: translateY(0);
+    }
+    .platform-btn:hover {
+      transform: translateY(-5px);
+    }
+    .contact {
+      text-align: center;
+      font-size: 1em;
+      padding: 1em;
+      color: white;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+    .contact a {
+      color: white;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .copyright {
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+  <div class="hero">
+    <h1>«<Будни»</h1>
+    <h2>by Wektra</h2>
+  </div>
+
+  <div class="gallery">
+    <img src="cover2.jpg" alt="Обложка альбома">
+  </div>
+
+  <div class="platforms-container">
+    <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+      <a href="https://open.spotify.com/album/6jPEUs9qK7sp5j62yeeaIA?si=w2kwqxVRRcug8-bPpIb09A" target="_blank" 
+          class="platform-btn bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
+        <i class="fab fa-spotify text-2xl"></i>
+        <span class="font-bold">Stream on Spotify</span>
+      </a>            
+      <a href="https://music.youtube.com/channel/UC8YUgB2zRDP08VepPzMlyVg" target="_blank" 
+          class="platform-btn bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
+        <i class="fab fa-youtube text-2xl"></i>
+        <span class="font-bold">YouTube Music</span>
+      </a>
+      <a href="https://music.apple.com/de/album/%D0%BB%D0%B5%D1%82%D0%BE-%D0%B1%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%BA/1766755882" target="_blank" 
+          class="platform-btn bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
+        <i class="fab fa-apple text-2xl"></i>
+        <span class="font-bold">Apple Music</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="contact">
+    <span class="copyright">© 2025 Wektra</span>
+    <span>•</span>
+    <a href="mailto:wektra.k@gmail.com">wektra.k@gmail.com</a>
+  </div>
+</body>
+</html>
