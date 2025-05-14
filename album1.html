@@ -128,11 +128,44 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       border: 3px solid rgba(255,255,255,0.3);
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .thumbnail-link:hover img {
+      filter: grayscale(0%);
+    }
+    .new-album-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to right,
+        rgba(255, 99, 132, 0.9),    /* Soft Red */
+        rgba(255, 159, 64, 0.9),    /* Soft Orange */
+        rgba(255, 205, 86, 0.9),    /* Soft Yellow */
+        rgba(75, 192, 192, 0.9),    /* Soft Green */
+        rgba(54, 162, 235, 0.9),    /* Soft Blue */
+        rgba(153, 102, 255, 0.9),   /* Soft Indigo */
+        rgba(201, 203, 207, 0.9)    /* Soft Violet */
+      );
+      color: white;
+      padding: 6px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      z-index: 2;
     }
   </style>
 </head>
 <body class="flex flex-col min-h-screen">
   <a href="index.html" class="thumbnail-link">
+    <div class="new-album-label">New album</div>
     <img src="cover_album2.jpg" alt="Будни">
   </a>
   <div class="hero">
