@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Будни - Wektra</title>
+  <title>Лето Бабочек - Wektra</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -21,7 +21,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('cover2.jpg');
+      background-image: url('cover_album1.jpg');
       background-size: cover;
       background-position: center;
       filter: blur(10px) brightness(0.7);
@@ -110,31 +110,86 @@
       font-size: 0.9em;
       opacity: 0.9;
     }
+    .thumbnail-link {
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      width: 20%;
+      max-width: 200px;
+      z-index: 10;
+      transition: transform 0.3s ease;
+    }
+    .thumbnail-link:hover {
+      transform: scale(1.05);
+    }
+    .thumbnail-link img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 3px solid rgba(255,255,255,0.3);
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .thumbnail-link:hover img {
+      filter: grayscale(0%);
+    }
+    .new-album-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to right,
+        rgba(255, 99, 132, 0.9),    /* Soft Red */
+        rgba(255, 159, 64, 0.9),    /* Soft Orange */
+        rgba(255, 205, 86, 0.9),    /* Soft Yellow */
+        rgba(75, 192, 192, 0.9),    /* Soft Green */
+        rgba(54, 162, 235, 0.9),    /* Soft Blue */
+        rgba(153, 102, 255, 0.9),   /* Soft Indigo */
+        rgba(201, 203, 207, 0.9)    /* Soft Violet */
+      );
+      color: white;
+      padding: 6px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      z-index: 2;
+    }
   </style>
 </head>
 <body class="flex flex-col min-h-screen">
+  <a href="index.html" class="thumbnail-link">
+    <div class="new-album-label">New album</div>
+    <img src="cover_album2.jpg" alt="Будни">
+  </a>
   <div class="hero">
-    <h1>«<Будни»</h1>
+    <h1>«Лето Бабочек»</h1>
     <h2>by Wektra</h2>
   </div>
 
   <div class="gallery">
-    <img src="cover2.jpg" alt="Обложка альбома">
+    <img src="cover_album1.jpg" alt="Обложка альбома">
   </div>
 
   <div class="platforms-container">
     <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-      <a href="https://open.spotify.com/album/6jPEUs9qK7sp5j62yeeaIA?si=w2kwqxVRRcug8-bPpIb09A" target="_blank" 
+      <a href="https://open.spotify.com/album/6jPEUs9qK7sp5j62yeeaIA?si=w2kwqxVRRcug8-bPpIb09A" target="_blank"
           class="platform-btn bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-spotify text-2xl"></i>
         <span class="font-bold">Stream on Spotify</span>
-      </a>            
-      <a href="https://music.youtube.com/channel/UC8YUgB2zRDP08VepPzMlyVg" target="_blank" 
+      </a>
+      <a href="https://music.youtube.com/channel/UC8YUgB2zRDP08VepPzMlyVg" target="_blank"
           class="platform-btn bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-youtube text-2xl"></i>
         <span class="font-bold">YouTube Music</span>
       </a>
-      <a href="https://music.apple.com/de/album/%D0%BB%D0%B5%D1%82%D0%BE-%D0%B1%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%BA/1766755882" target="_blank" 
+      <a href="https://music.apple.com/de/album/%D0%BB%D0%B5%D1%82%D0%BE-%D0%B1%D0%B0%D0%B1%D0%BE%D1%87%D0%B5%D0%BA/1766755882" target="_blank"
           class="platform-btn bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-apple text-2xl"></i>
         <span class="font-bold">Apple Music</span>
