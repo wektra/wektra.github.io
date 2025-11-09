@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Будни - Wektra</title>
+  <title>Всё пройдёт - Wektra</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -21,7 +21,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('cover_album2.jpg');
+      background-image: url('cover_album3.jpg');
       background-size: cover;
       background-position: center;
       filter: blur(10px) brightness(0.7);
@@ -119,6 +119,9 @@
       z-index: 10;
       transition: transform 0.3s ease;
     }
+    .thumbnail-link.below {
+      top: 280px;
+    }
     .thumbnail-link:hover {
       transform: scale(1.05);
     }
@@ -155,28 +158,32 @@
     <div class="album-label">«Лето бабочек»</div>
     <img src="cover_album1.jpg" alt="Лето бабочек">
   </a>
+  <a href="album2.html" class="thumbnail-link below">
+    <div class="album-label">«Будни»</div>
+    <img src="cover_album2.jpg" alt="Будни">
+  </a>
   <div class="hero">
-    <h1>«Будни»</h1>
+    <h1>«Всё пройдёт»</h1>
     <h2>by Wektra</h2>
   </div>
 
   <div class="gallery">
-    <img src="cover_album2.jpg" alt="Обложка альбома">
+    <img src="cover_album3.jpg" alt="Обложка альбома">
   </div>
 
   <div class="platforms-container">
     <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-      <a href="https://open.spotify.com/album/4Pr5sqIQfqjVIZ8VdBvUSd?si=jTdCxDTISvmWAUSox2MCtw" target="_blank"
+      <a href="https://open.spotify.com/album/3Xza3rQNiyELsHydkj3U76?si=BI7MQSTDQ0WazpPE9QtWnw" target="_blank"
           class="platform-btn bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-spotify text-2xl"></i>
         <span class="font-bold">Stream on Spotify</span>
       </a>
-      <a href="https://music.youtube.com/playlist?list=OLAK5uy_ltelPTDCFEnv9Iy47DyNqD2YpzooPwwkM" target="_blank"
+      <a href="https://music.youtube.com/playlist?list=OLAK5uy_lLkRDYrkm7HVLN7vKLrWeE3qoiR7aL4_k" target="_blank"
           class="platform-btn bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-youtube text-2xl"></i>
         <span class="font-bold">YouTube Music</span>
       </a>
-      <a href="https://music.apple.com/us/album/%D0%B1%D1%83%D0%B4%D0%BD%D0%B8/1819115713" target="_blank"
+      <a href="https://music.apple.com/us/album/%D0%B2%D1%81%D1%91-%D0%BF%D1%80%D0%BE%D0%B9%D0%B4%D1%91%D1%82/1849333608" target="_blank"
           class="platform-btn bg-pink-600 hover:bg-pink-700 text-white px-8 py-4 rounded-full flex items-center justify-center gap-3">
         <i class="fab fa-apple text-2xl"></i>
         <span class="font-bold">Apple Music</span>
